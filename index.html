@@ -87,6 +87,11 @@
   .cijfers strong{display:block;font-family:'DM Serif Display',serif;font-weight:400;font-size:38px;line-height:1;color:var(--oranje)}
   .cijfers span{font-size:13px;color:var(--grijs)}
   .beeld.duo .inzet.staand{width:30%;aspect-ratio:auto}
+  .galerij{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-20px}
+  .galerij figure{margin:0}
+  .galerij img{width:100%;height:240px;object-fit:cover;border-radius:8px}
+  .galerij figcaption{font-size:13px;color:var(--grijs);margin-top:6px}
+  @media (max-width:900px){.galerij{grid-template-columns:1fr 1fr;margin-top:0}.galerij img{height:180px}}
   .verhaal .nummer{font-family:'DM Serif Display',serif;color:var(--oranje);font-size:20px;margin-bottom:6px}
   .verhaal h3{font-size:30px;margin-bottom:16px}
   .verhaal p{color:#3A4352;margin-bottom:12px}
@@ -279,11 +284,31 @@
 
     <article class="verhaal">
       <div class="beeld">
+        <img src="img/mkb-zh-gesprek.jpg" alt="Marjan in gesprek met ondernemers tijdens het event van MKB Zuid-Holland">
+      </div>
+      <div>
+        <div class="nummer">06</div>
+        <h3>Zichtbaar waar ondernemers zijn</h3>
+        <p>Werkgevers bereik je niet alleen achter je bureau. Daarom sta ik op de plekken waar ondernemers en partners samenkomen.</p>
+        <p>Op het event van MKB Zuid-Holland stond ik met collega's van NLwerktaanwerk klaar als gids naar oplossingen voor in-, door- en uitstroom van personeel. Het thema: reskilling, upskilling en reshaping. Tussen de sessies door voerde ik veel gesprekken met ondernemers over hun personeelsvraagstukken.</p>
+        <p>Ook op de inspiratiedag van UWV was ik aanwezig, om de verbinding tussen werkgevers en publieke partners te versterken.</p>
+        <div class="tags"><span class="tag">MKB Zuid-Holland</span><span class="tag">UWV</span><span class="tag">Netwerken</span><span class="tag">Publieke partners</span></div>
+      </div>
+      <div class="galerij">
+        <figure><img src="img/mkb-zh-team.jpg" alt="Team NLwerktaanwerk bij MKB Zuid-Holland"><figcaption>MKB Zuid-Holland</figcaption></figure>
+        <figure><img src="img/mkb-zh-stand.jpg" alt="Stand van NLwerktaanwerk"><figcaption>Stand NLwerktaanwerk</figcaption></figure>
+        <figure><img src="img/mkb-zh-podium.jpg" alt="Podium MKB Zuid-Holland over reskilling, upskilling en reshaping"><figcaption>Reskilling, upskilling, reshaping</figcaption></figure>
+        <figure><img src="img/uwv-inspiratiedag.jpg" alt="Marjan op de inspiratiedag van UWV"><figcaption>Inspiratiedag UWV</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="verhaal">
+      <div class="beeld">
         <img src="img/terugblik-3.jpg" alt="Selectie op gedrag" onerror="this.parentElement.classList.add('zonder-foto')">
         <div class="leeg">Foto volgt<small>img/terugblik-3.jpg</small></div>
       </div>
       <div>
-        <div class="nummer">06</div>
+        <div class="nummer">07</div>
         <h3>Vervolg: selecteren op gedrag</h3>
         <p>Talent vinden is stap één, daarover gaat mijn workshop "Je zoekt personeel. Vind je ook talent?". Daarom werk ik nu aan een tweede workshop over het sollicitatiegesprek, de selectie en het goed laten landen van nieuwe medewerkers.</p>
         <p>De kern: vraag niet alleen naar taken of ervaring, maar naar onderliggend gedrag zoals nauwkeurigheid, initiatief en doorzettingsvermogen. Zo krijgt een banketbakker die boekhouder wil worden een eerlijke kans, op basis van wat hij laat zien in plaats van onderbuikgevoel.</p>
@@ -297,7 +322,7 @@
         <div class="leeg">Foto volgt<small>img/terugblik-4.jpg</small></div>
       </div>
       <div>
-        <div class="nummer">07</div>
+        <div class="nummer">08</div>
         <h3>Skills zichtbaar maken met eigen tools</h3>
         <p>Skillsgericht werken wordt pas concreet als je het kunt laten zien. Daarom bouwde ik Skills Intake en Skills Match: tools waarmee werkgevers en werkzoekenden direct inzicht krijgen in skills en matches. Ik laat ze zien tijdens presentaties, onder andere bij Werkcentrum Rivierenland.</p>
         <p>Daarnaast maakte ik een zij-instroom matcher voor de routekaarten van NLwerktaanwerk.</p>
@@ -311,7 +336,7 @@
         <div class="leeg">Foto volgt<small>img/terugblik-5.jpg</small></div>
       </div>
       <div>
-        <div class="nummer">08</div>
+        <div class="nummer">09</div>
         <h3>Meebouwen aan NLwerktaanwerk</h3>
         <p>Naast mijn regiowerk droeg ik bij aan het landelijke project. Ik testte de chatbot op nlwerktaanwerk.nl en schreef daar een testrapport over, maakte een presentatieblad voor een overleg met het ministerie van SZW en verkende hoe een regionale skillsbibliotheek eruit kan zien op basis van ESCO en CompetentNL.</p>
         <div class="tags"><span class="tag">Landelijk projectteam</span><span class="tag">ESCO</span><span class="tag">CompetentNL</span></div>
