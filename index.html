@@ -82,6 +82,10 @@
   .beeld iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
   .lees{display:inline-block;margin-top:18px;font-weight:600;text-decoration:none}
   .beeld.duo .inzet{position:absolute;right:14px;bottom:14px;width:42%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:8px;border:4px solid #fff;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+  .cijfers{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 4px}
+  .cijfers div{background:var(--wit);border:1px solid var(--lijn);border-radius:8px;padding:14px 12px;text-align:center}
+  .cijfers strong{display:block;font-family:'DM Serif Display',serif;font-weight:400;font-size:38px;line-height:1;color:var(--oranje)}
+  .cijfers span{font-size:13px;color:var(--grijs)}
   .verhaal .nummer{font-family:'DM Serif Display',serif;color:var(--oranje);font-size:20px;margin-bottom:6px}
   .verhaal h3{font-size:30px;margin-bottom:16px}
   .verhaal p{color:#3A4352;margin-bottom:12px}
@@ -226,25 +230,11 @@
 
     <article class="verhaal">
       <div class="beeld">
-        <img src="img/terugblik-2.jpg" alt="Workshop voor werkgevers" onerror="this.parentElement.classList.add('zonder-foto')">
-        <div class="leeg">Foto volgt<small>img/terugblik-2.jpg</small></div>
-      </div>
-      <div>
-        <div class="nummer">03</div>
-        <h3>Workshop: "Je zoekt personeel. Vind je ook talent?"</h3>
-        <p>Ik ontwikkelde een workshop van twee uur voor werkgevers, compleet met presentatie, handout en draaiboek. Werkgevers leren daarin kijken naar wat mensen kunnen, in plaats van alleen naar diploma's en functietitels.</p>
-        <p>Het resultaat: werkgevers zien kandidaten die ze eerder over het hoofd zagen, zoals zij-instromers uit een andere sector.</p>
-        <div class="tags"><span class="tag">Inspiratiesessie</span><span class="tag">Skillsgericht werven</span></div>
-      </div>
-    </article>
-
-    <article class="verhaal">
-      <div class="beeld">
         <img src="img/generaties.jpg" alt="Sessie Kracht van generaties bij Werkcentrum Gorinchem" onerror="this.parentElement.classList.add('zonder-foto')">
         <div class="leeg">Foto volgt<small>img/generaties.jpg</small></div>
       </div>
       <div>
-        <div class="nummer">04</div>
+        <div class="nummer">03</div>
         <h3>Kracht van generaties</h3>
         <p>Vier generaties op de werkvloer. Hoe haal je daar het beste uit? Samen met Werkcentrum Gorinchem organiseerde ik een sessie over precies die vraag.</p>
         <p>Iedere generatie brengt eigen ervaringen, verwachtingen en manieren van werken mee. In een interactieve werkvorm gingen werkgevers letterlijk de vloer op om te ontdekken wat elke generatie drijft en hoe je die verschillen juist benut. Want wie zijn mensen begrijpt, houdt ze ook langer vast.</p>
@@ -254,15 +244,34 @@
 
     <article class="verhaal">
       <div class="beeld duo">
-        <img src="img/make-center-1.jpg" alt="Sessie Kracht van skills bij MAKE Center">
+        <img src="img/make-center-1.jpg" alt="Sessie Kracht van skills">
         <img class="inzet" src="img/make-center-2.jpg" alt="Marjan geeft uitleg op het scherm">
       </div>
       <div>
-        <div class="nummer">05</div>
-        <h3>Kracht van skills bij MAKE Center</h3>
-        <p>Bij MAKE Center liet ik werkgevers zien hoe een andere blik op talent nieuwe kansen opent in een krappe arbeidsmarkt: minder focus op diploma's, meer op wat mensen kunnen.</p>
+        <div class="nummer">04</div>
+        <h3>Kracht van skills</h3>
+        <p>In de sessie Kracht van skills liet ik werkgevers zien hoe een andere blik op talent nieuwe kansen opent in een krappe arbeidsmarkt: minder focus op diploma's, meer op wat mensen kunnen.</p>
         <p>Met praktijkvoorbeelden en live demonstraties op het scherm werd skillsgericht werken concreet en direct toepasbaar. Mijn boodschap die dag: "Een diploma is het begin, skills maken het verschil!"</p>
-        <div class="tags"><span class="tag">MAKE Center</span><span class="tag">Inspiratiesessie</span><span class="tag">Skills in de praktijk</span></div>
+        <div class="tags"><span class="tag">Inspiratiesessie</span><span class="tag">Skills in de praktijk</span></div>
+      </div>
+    </article>
+
+    <article class="verhaal">
+      <div class="beeld">
+        <img src="img/terugblik-2.jpg" alt="Werkgevers uit de regio aan tafel" onerror="this.parentElement.classList.add('zonder-foto')">
+        <div class="leeg">Foto volgt<small>img/terugblik-2.jpg</small></div>
+      </div>
+      <div>
+        <div class="nummer">05</div>
+        <h3>Samenwerken in de regio</h3>
+        <p>Werkgevers voeren veel sollicitatiegesprekken met goede kandidaten die net niet passen. Zonde om die mensen te laten gaan. Daarom heb ik werkgevers in de regio met elkaar verbonden: wie een kandidaat afwijst, verwijst door naar een andere werkgever die zo iemand wel zoekt.</p>
+        <p>Zo blijft talent in de regio behouden en vinden werkgevers elkaar in plaats van te concurreren.</p>
+        <div class="cijfers">
+          <div><strong>19</strong><span>werkgevers doen mee</span></div>
+          <div><strong>20</strong><span>gesprekken gevoerd</span></div>
+          <div><strong>3</strong><span>mensen aan het werk</span></div>
+        </div>
+        <div class="tags"><span class="tag">Doorverwijzen</span><span class="tag">Regionaal netwerk</span><span class="tag">Talent behouden</span></div>
       </div>
     </article>
 
@@ -274,7 +283,7 @@
       <div>
         <div class="nummer">06</div>
         <h3>Vervolg: selecteren op gedrag</h3>
-        <p>Talent vinden is stap één. Daarom werk ik aan een tweede workshop over het sollicitatiegesprek, de selectie en het goed laten landen van nieuwe medewerkers.</p>
+        <p>Talent vinden is stap één, daarover gaat mijn workshop "Je zoekt personeel. Vind je ook talent?". Daarom werk ik nu aan een tweede workshop over het sollicitatiegesprek, de selectie en het goed laten landen van nieuwe medewerkers.</p>
         <p>De kern: vraag niet alleen naar taken of ervaring, maar naar onderliggend gedrag zoals nauwkeurigheid, initiatief en doorzettingsvermogen. Zo krijgt een banketbakker die boekhouder wil worden een eerlijke kans, op basis van wat hij laat zien in plaats van onderbuikgevoel.</p>
         <div class="tags"><span class="tag">Selectie</span><span class="tag">Onboarding</span><span class="tag">Zij-instroom</span></div>
       </div>
@@ -341,7 +350,7 @@
       <div class="skill">
         <span class="niveau">Gevorderd</span>
         <h3>Initiatief tonen</h3>
-        <p>Ik wacht niet af. De workshop, de vervolgworkshop en de skills-tools zijn allemaal op eigen initiatief ontstaan, binnen de kaders en doelen van het project.</p>
+        <p>Ik wacht niet af. Het doorverwijsnetwerk in de regio, de workshops en de skills-tools zijn allemaal op eigen initiatief ontstaan, binnen de kaders en doelen van het project.</p>
       </div>
       <div class="skill">
         <span class="niveau">Gevorderd / expert</span>
