@@ -73,6 +73,14 @@
   .beeld .leeg small{color:var(--grijs);font-weight:400;font-size:13px}
   .beeld.zonder-foto img{display:none}
   .beeld.zonder-foto .leeg{display:flex}
+  .beeld.video{display:block;text-decoration:none;background:var(--blauw)}
+  .video-kaart{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:12px;padding:28px;color:#fff;background:linear-gradient(135deg,var(--blauw) 0%,var(--blauw-zacht) 100%)}
+  .video-kaart .play{width:72px;height:72px;border-radius:50%;background:var(--oranje);display:flex;align-items:center;justify-content:center;font-size:26px;padding-left:5px;transition:transform .2s}
+  .beeld.video:hover .play{transform:scale(1.08)}
+  .video-kaart strong{font-family:'DM Serif Display',serif;font-weight:400;font-size:24px;line-height:1.2}
+  .video-kaart small{color:#B7C2D6;font-size:14px}
+  .beeld iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .lees{display:inline-block;margin-top:18px;font-weight:600;text-decoration:none}
   .verhaal .nummer{font-family:'DM Serif Display',serif;color:var(--oranje);font-size:20px;margin-bottom:6px}
   .verhaal h3{font-size:30px;margin-bottom:16px}
   .verhaal p{color:#3A4352;margin-bottom:12px}
@@ -201,12 +209,31 @@
     </article>
 
     <article class="verhaal">
+      <a class="beeld video" id="rietveld-video" href="https://www.nlwerktaanwerk.nl/artikelen/skillsgericht-ondernemen-lost-personeelstekort-rietveld-b-v-op" target="_blank" rel="noopener">
+        <div class="video-kaart">
+          <span class="play">&#9654;</span>
+          <strong>Technisch personeel vinden door skillsgericht werven</strong>
+          <small>Bekijk de video en het artikel op nlwerktaanwerk.nl</small>
+        </div>
+      </a>
+      <div>
+        <div class="nummer">02</div>
+        <h3>Succesverhaal: Rietveld B.V.</h3>
+        <p>Rietveld B.V., specialist in slimme technische voertuigsystemen, kreeg zijn technische vacatures nauwelijks gevuld. Via de reguliere werving kwamen er bijna geen technische kandidaten binnen.</p>
+        <p>Samen hebben we de functieprofielen opgedeeld in taken en aan elke taak de benodigde skills gekoppeld. Zo werd zichtbaar wat medewerkers al konden, waar ze zich konden ontwikkelen en welke skills echt ontbraken. De werving richtte zich daarna op vaardigheden, niet alleen op diploma's en werkervaring.</p>
+        <p>Het resultaat volgens Pleun Rietveld: geen personeelstekort meer. Mijn boodschap aan andere werkgevers: "Dit is voor elke werkgever mogelijk."</p>
+        <div class="tags"><span class="tag">Taken en skills</span><span class="tag">Skillsgericht werven</span><span class="tag">Interne ontwikkeling</span></div>
+        <a class="lees" href="https://www.nlwerktaanwerk.nl/artikelen/skillsgericht-ondernemen-lost-personeelstekort-rietveld-b-v-op" target="_blank" rel="noopener">Lees het artikel op nlwerktaanwerk.nl &rarr;</a>
+      </div>
+    </article>
+
+    <article class="verhaal">
       <div class="beeld">
         <img src="img/terugblik-2.jpg" alt="Workshop voor werkgevers" onerror="this.parentElement.classList.add('zonder-foto')">
         <div class="leeg">Foto volgt<small>img/terugblik-2.jpg</small></div>
       </div>
       <div>
-        <div class="nummer">02</div>
+        <div class="nummer">03</div>
         <h3>Workshop: "Je zoekt personeel. Vind je ook talent?"</h3>
         <p>Ik ontwikkelde een workshop van twee uur voor werkgevers, compleet met presentatie, handout en draaiboek. Werkgevers leren daarin kijken naar wat mensen kunnen, in plaats van alleen naar diploma's en functietitels.</p>
         <p>Het resultaat: werkgevers zien kandidaten die ze eerder over het hoofd zagen, zoals zij-instromers uit een andere sector.</p>
@@ -220,7 +247,7 @@
         <div class="leeg">Foto volgt<small>img/terugblik-3.jpg</small></div>
       </div>
       <div>
-        <div class="nummer">03</div>
+        <div class="nummer">04</div>
         <h3>Vervolg: selecteren op gedrag</h3>
         <p>Talent vinden is stap één. Daarom werk ik aan een tweede workshop over het sollicitatiegesprek, de selectie en het goed laten landen van nieuwe medewerkers.</p>
         <p>De kern: vraag niet alleen naar taken of ervaring, maar naar onderliggend gedrag zoals nauwkeurigheid, initiatief en doorzettingsvermogen. Zo krijgt een banketbakker die boekhouder wil worden een eerlijke kans, op basis van wat hij laat zien in plaats van onderbuikgevoel.</p>
@@ -234,7 +261,7 @@
         <div class="leeg">Foto volgt<small>img/terugblik-4.jpg</small></div>
       </div>
       <div>
-        <div class="nummer">04</div>
+        <div class="nummer">05</div>
         <h3>Skills zichtbaar maken met eigen tools</h3>
         <p>Skillsgericht werken wordt pas concreet als je het kunt laten zien. Daarom bouwde ik Skills Intake en Skills Match: tools waarmee werkgevers en werkzoekenden direct inzicht krijgen in skills en matches. Ik laat ze zien tijdens presentaties, onder andere bij Werkcentrum Rivierenland.</p>
         <p>Daarnaast maakte ik een zij-instroom matcher voor de routekaarten van NLwerktaanwerk.</p>
@@ -248,7 +275,7 @@
         <div class="leeg">Foto volgt<small>img/terugblik-5.jpg</small></div>
       </div>
       <div>
-        <div class="nummer">05</div>
+        <div class="nummer">06</div>
         <h3>Meebouwen aan NLwerktaanwerk</h3>
         <p>Naast mijn regiowerk droeg ik bij aan het landelijke project. Ik testte de chatbot op nlwerktaanwerk.nl en schreef daar een testrapport over, maakte een presentatieblad voor een overleg met het ministerie van SZW en verkende hoe een regionale skillsbibliotheek eruit kan zien op basis van ESCO en CompetentNL.</p>
         <div class="tags"><span class="tag">Landelijk projectteam</span><span class="tag">ESCO</span><span class="tag">CompetentNL</span></div>
@@ -294,7 +321,7 @@
       <div class="skill">
         <span class="niveau">Gevorderd / expert</span>
         <h3>Problemen signaleren</h3>
-        <p>Achter "ik kan geen personeel vinden" zit vaak een andere vraag: een te smal functieprofiel, selectie op onderbuikgevoel of te weinig aandacht voor behoud. Die vraag haal ik boven en vertaal ik naar een concreet voorstel.</p>
+        <p>Achter "ik kan geen personeel vinden" zit vaak een andere vraag: een te smal functieprofiel, selectie op onderbuikgevoel of te weinig aandacht voor behoud. Die vraag haal ik boven en vertaal ik naar een concreet voorstel, zoals bij Rietveld B.V.: van "geen technici te vinden" naar werven op skills.</p>
       </div>
       <div class="skill">
         <span class="niveau">Expert</span>
